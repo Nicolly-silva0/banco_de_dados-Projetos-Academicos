@@ -1,0 +1,101 @@
+/* Reset padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caixa principal */
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input e botão */
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #74ebd5;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #74ebd5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #4db8a4;
+}
+
+/* Lista de tarefas */
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Tarefa concluída */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+
+/* Botão de excluir dentro do li */
+li button {
+  background-color: #ff5c5c;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+li button:hover {
+  background-color: #e60000;
+}
